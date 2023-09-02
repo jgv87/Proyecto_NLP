@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h3 {
+            color: black;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%; /* Reducir el ancho de la tabla */
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            max-height: 400px; /* Establecer una altura máxima para la tabla */
+            overflow-y: auto; /* Agregar barra de desplazamiento vertical si el contenido excede la altura */
+        }
+        th, td {
+            padding: 4px; /* Reducir el padding para hacer las filas más estrechas */
+            font-size: 12px; /* Reducir el tamaño de la fuente */
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h3>Resultados globales</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>eval_accuracy</th>
+      <th>eval_precision_global</th>
+      <th>eval_recall_global</th>
+      <th>eval_f1_global</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.86565</td>
+      <td>0.865661</td>
+      <td>0.86565</td>
+      <td>0.865651</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h3>Resultados locales</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Etiqueta</th>
+      <th>eval_precision_por_label</th>
+      <th>eval_recall_por_label</th>
+      <th>eval_f1_por_label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>label 0/1</td>
+      <td>[0.8681159420289855, 0.8631732168850073]</td>
+      <td>[0.8643578643578643, 0.8669590643274854]</td>
+      <td>[0.866232827187274, 0.8650619985412108]</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h3>Resultados cm</h3>
+    <table border="1" class="dataframe">
+  <tbody>
+    <tr>
+      <td>[[599, 94], [91, 593]]</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
